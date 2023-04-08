@@ -1,12 +1,15 @@
 ﻿#include <cstdlib>
 #include <iostream>
+#include <Windows.h>
 #include "BasicMatrixUtils.h"
 
 using namespace std;
 
 int main()
 {
-    bool isRunning = false;
+    setlocale(LC_ALL, "ru");
+
+    bool isRunning = true;
     int matrix[ROWS][COLS];
     fillMatrix(matrix);
 
@@ -16,7 +19,7 @@ int main()
         cout << "Матрица:\n";
         printMatrix(matrix);
 
-        cout << "С помощью данной программы вы можете:\n";
+        cout << "\nС помощью данной программы вы можете:\n";
         cout << "1. Найти и вывести на экран количество отрицательных элементов на главной диагонали" << endl;
         cout << "2. Заменить все положительные элементы выше побочной диагонали на 0" << endl;
         cout << "0. Выйти из программы" << endl;
@@ -32,10 +35,10 @@ int main()
         switch (cmdId) 
         {
             case 1:
-                goToAccountPage();
+              //  goToAccountPage();
                 break;
             case 2:
-                browseCarList();
+              //  browseCarList();
                 break;
             case 0:
                 isRunning = false;
