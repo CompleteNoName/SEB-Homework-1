@@ -1,4 +1,6 @@
 #pragma once
+#include <cstdlib>
+#include <iostream>
 
 const int ROWS = 7;
 const int COLS = 7;
