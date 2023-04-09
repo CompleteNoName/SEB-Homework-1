@@ -10,3 +10,5 @@ const int UPPER_RANDOM_BOUND = 12;
 int randomInt(int, int);
 void printMatrix(int[ROWS][COLS]);
 void fillMatrix(int matrix[ROWS][COLS]);
+void negativeInMatrix(int matrix[ROWS][COLS]);
+void positiveInNull(int matrix[ROWS][COLS]);

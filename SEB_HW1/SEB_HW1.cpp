@@ -35,10 +35,11 @@ int main()
         switch (cmdId) 
         {
             case 1:
-              //  goToAccountPage();
+                negativeInMatrix(matrix);
                 break;
             case 2:
-              //  browseCarList();
+                positiveInNull(matrix);
+                printMatrix(matrix); 
                 break;
             case 0:
                 isRunning = false;
