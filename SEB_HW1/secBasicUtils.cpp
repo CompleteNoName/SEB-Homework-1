@@ -15,11 +15,10 @@ void negativeInMatrix(int matrix[ROWS][COLS])
 			if ((i == j) and (matrix[i][j] < 0))
 			{
 				k += 1;
-				cout << setw(5) << matrix[i][j] << setw(5) << k;
 			}
 		}
-		cout << endl;
 	}
+	cout << "В матрице на главной диагонали " << k << " элементов." << endl;
 }
 
 void positiveInNull(int matrix[ROWS][COLS])
@@ -28,12 +27,10 @@ void positiveInNull(int matrix[ROWS][COLS])
 	{
 		for (int j = 0; j < COLS; j++)
 		{
-			if ((matrix[i][j] > 0) and (i > j))
+			if ((matrix[i][j] > 0) and (i + j < ROWS - 1))
 			{
 				matrix[i][j] = 0;
-				cout << setw(5) << matrix[i][j];
 			}
 		}
-		cout << endl;
 	}
 }

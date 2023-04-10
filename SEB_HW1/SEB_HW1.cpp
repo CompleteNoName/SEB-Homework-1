@@ -16,6 +16,7 @@ int main()
     while (isRunning) {
         unsigned int cmdId{};
 
+        system("cls");
         cout << "Матрица:\n";
         printMatrix(matrix);
 
@@ -39,6 +40,7 @@ int main()
                 break;
             case 2:
                 positiveInNull(matrix);
+                cout << "\nНовая матрица: " << endl;
                 printMatrix(matrix); 
                 break;
             case 0:
@@ -48,7 +50,10 @@ int main()
                 cout << "Такой команды не существует.\n";
         }
 
-        system("cls");
+        if (isRunning)
+        {
+            system("pause");
+        }
     }
 
     return 0;

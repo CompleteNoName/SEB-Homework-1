@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="BasicMatrixUtils.cpp" />
     <ClCompile Include="SEB_HW1.cpp" />
+    <ClCompile Include="secBasicUtils.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BasicMatrixUtils.h" />
